@@ -11,7 +11,7 @@ body{
 }
 
 
-                                                                        /*Inicio Css do Header*/
+    /*Inicio Css do Header*/
 header{
     display: flex;
     justify-content: space-between;
@@ -19,18 +19,31 @@ header{
 
     .link-container{
         display: flex;
-        gap: 40px;
+        gap: 32px;
+    }
+
+    .link-container a{
+        text-shadow: 2px 2px 2px #000;
+        padding: 6px;
+        transition: all 1s;
+    }
+
+    .link-container a:hover{
+        background-color: #E62721;
     }
 
 
-                                                                        /*Inicio Css do Main*/
+
+    
+
+    /*Inicio Css do Main*/
 main{
     background-color: tomato;
     flex-grow: 1;
 }
 
 
-                                                                        /*Inicio Css do Footer*/
+    /*Inicio Css do Footer*/
 footer{
     background-color: violet;
     height: 21px;

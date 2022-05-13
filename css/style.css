@@ -5,6 +5,7 @@ body{
     url(../img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right;
     display: flex;
     flex-direction: column;
     padding: 80px 128px 50px 128px;
@@ -159,15 +160,62 @@ header{
         gap: 32px;
     }
 
-    .link-container a{
-        text-shadow: 2px 2px 2px #000;
-        padding: 6px;
-        transition: all 1s;
-    }
+.link-container a{
+    text-shadow: 2px 2px 2px #000;
+    padding: 6px;
+    transition: all 1s;
+}
 
-    .link-container a:hover{
-        background-color: #E62721;
-    }
+.link-container a:hover{
+    background-color: #E62721;
+}
+
+
+.menu-burguer-container{
+    height: 36px;
+    width: 36px;
+    position: absolute;
+    display: none;
+    align-items: center;
+    z-index: 2;
+    right: 30px;
+    top: 50px;
+}
+
+.menu-burguer, 
+.menu-burguer::before,
+.menu-burguer::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    height: 4px;
+    width: 36px;
+    border-radius: 5px;
+    transition: all 1s;
+}
+
+.menu-burguer::before{
+    transform: translateY(-12px);
+}
+
+.menu-burguer::after{
+    transform: translateY(12px);
+}
+
+.menu-burguer-container.active .menu-burguer{
+    background-color: transparent;
+}
+
+.menu-burguer-container.active .menu-burguer::before{
+    transform: rotate(45deg);
+}
+
+.menu-burguer-container.active .menu-burguer::after{
+    transform: rotate(-45deg);
+}
+
+
 
 
 

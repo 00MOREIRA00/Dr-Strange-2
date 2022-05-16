@@ -12,3 +12,7 @@
 <div align="center">
 <img src="https://user-images.githubusercontent.com/85044936/168625474-ea62fcb7-4a04-4fa2-a746-eea842509731.gif"/>
 </div
+  
+ <br>
+  
+  <a href="https://www.youtube.com/watch?v=24G8dGNUsXM&t=5498s">Link para o vídeo do canal de referencia</a>
